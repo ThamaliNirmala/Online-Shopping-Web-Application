@@ -1,0 +1,32 @@
+/* 	Matharaarachchi M.A.N.C
+	IT19992358
+	IWI Final Project
+	SLIIT Kurunegala Center */
+
+@charset "utf-08";
+
+form{
+	background-color:#dbd9d9;
+	width:80%;
+}
+
+label,textarea,select{
+	margin:10px 10px 10px 10px;
+	
+}
+
+.submit{
+	background-color:green;
+	color:white;
+	padding:5px;
+	border:1;
+	
+}
+input.hi{
+	
+	width:98%;
+	height:20px;
+	border:solid black;
+	margin:10px 10px 10px 10px;
+	color:blue;
+}

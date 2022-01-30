@@ -1,0 +1,329 @@
+<!--
+IT20074722
+Tharaka H.D.K
+Group 2
+Kurunegala Center
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VIP Registation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/layout.css"/>
+	<link rel="stylesheet" href="../styles/formStyles.css"/>
+	<link rel="icon" href="../ico.ico" type="image/x-icon">
+	<script type="text/javascript" src="../js/script.js"></script>
+	
+<style> 
+body{
+	background-image:url("../images/bg09.jfif");
+	background-repeat: no-repeat;
+    background-size: cover;
+	height: 100%;
+	background-position: center;
+}
+</style>
+
+</head>
+<!--Header Section-->
+<body>
+	
+	<div class="top-container">
+		<a href="#" title = "VIP Grocery Delivery System"><img src="../images/logo.png" alt="VIP Grocery Delivery System"></a>
+		<img src="../images/word2.png" style="float:right;display:block;height:100px">
+	</div>
+<!--navigation bar-->	
+<div class="header" id="myHeader">
+<div class="topnav">
+  <a  href="../home.html">Home</a>
+  <a class="active zoom" href="registration.html">Registration</a>
+  <a href="login.html">Login</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="userAcc.html">User Accounts</a>
+  <div class="search-container">
+    <form method = "post" action="../php/search.php">
+      <input type="text" placeholder="Find Your Groceries Here" name="search">
+      <input type="submit" value="Search" class="input input1" name = "submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+</div>
+
+<div style="float:right">
+<br><br>
+<input type="date" class="input input1" style="width:140px"><br>
+<script>
+					var d = new Date();
+					var date = d.getDate();
+					var month=d.getMonth() + 1;
+					var year=d.getFullYear();
+					var str = month + " / " + date + " / " + year;
+		
+					document.write(str + "<br>" + "<br>");
+					
+					var sec = d.getSeconds();
+					var min = d.getMinutes();
+					var hr = d.getHours();
+					var time = "<b>" + hr + ":" + min + ":" + sec + "</b>" ;
+					document.write(time);
+</script>
+</div>
+
+<br>
+<div style="text-align:center">
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span>  
+</div>
+
+<script>
+	showSlides();
+</script>
+<br><br>
+<section>
+			<nav class="nav1">
+				<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="plates.html">Plate Sets</a>
+					<a href="beverage.html">Beverages</a>
+					<a href="laundry.html">Laundry Items</a>
+					<a href="skin.html">Skin Care</a>
+					<a href="knife.html">Knife Sets</a>
+				</div>
+				<div class="zoom"><span class="zoom" style="font-size:20px;cursor:pointer;color:white" onclick="openNav()">&#9776; Popular Orders</span></div>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<h5 style="color:white">Pin It</h5>
+					<a href="https://www.pinterest.com" title = "pinterest" ><img src="../images/pin.png" style ="width:50px" class="zoom"></a>
+					<h6 style="color:yellow">Online Shopping In Sri Lanka with Free Home Delivery</h6>
+					<p style="font-size:11px;color:blue">"What was the last time you had an exciting and rewarding online shopping experience? Can’t remember!"
+					</p>
+		
+				</ul><br/>
+
+			</nav>
+			<article class="article1">
+				<h1 style="text-align:center; font-size:40px; color:#660000;"><b>Create your VIP Grocery Account</b></h1>
+				<b>Already Member ? </b><a href="login.html" style="color:red;">Login</a> <b>Here</b>
+				<br></br>
+				<form style="border: 2px solid black; padding: 25px;background: url('../images/form.jpg'); background-size:cover;" method="POST" target="_self" action="../php/registration.php" onsubmit="return checkPassword()">
+					<label for="fname" font ><b style="color:#d9d9d9;">First Name</b><font color="red"></font></label><br/>
+					<input type="text" style="
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color:black;
+  color: white;"  id="fname" name="fname" class="hi" placeholder="Enter your first name" required></input><br/>
+					<br></br>
+					<label for="lname"><b style="color:#d9d9d9;">Last Name</b><font color="red"></font></label><br/>
+					<input type="text" style="
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color:black;
+  color: white;"id="lname" name="lname" class="hi" placeholder="Enter your last name" required></input><br/>
+					<br></br>
+					<label for="gender"><b style="color:#d9d9d9;">Gender</b></label><br/>
+					<input type="radio" id="gender" name="gender">Male</input>
+					<input type="radio" id="gender" name="gender">Female</input><br/><br>
+					<br></br>
+					<label for="mobile"><b style="color:#d9d9d9;">Mobile Number</b><font color="red"></font></label><br/>
+					<input type="text" style="
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color:black;
+  color: white;" id="mobile" name="mobile" class="hi" pattern="[0-9]{10}" placeholder="Enter your mobile number" required></input><br/>
+					<br></br>
+					<label for="email"><b style="color:#d9d9d9;">E-mail</b><font color="red"></font></label><br/>
+					<input type="text" style="
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color:black;
+  color: white;" id="email" name="email" class="hi" pattern="[0-9a-zA-Z%&$@.]+@[a-zA-Z]+\.+[a-zA-Z]{2,3}" placeholder="Enter your E-mail" required></input><br/>
+					<br></br>
+					<label for="address"><b style="color:#d9d9d9;">Address</b><font color="red"></font></label><br/>
+					<textarea type="text" id="address" name="address" rows="4" col="10" placeholder="Enter your Address" style="border:solid black" required></textarea><br/><br/
+					<br></br>
+					<label for="dob"><b style="color:#d9d9d9;">Choose your DOB</b></label><br/>
+				<select>
+					<option name="Choose a date" selected>Choose a date</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					<option>21</option>
+					<option>22</option>
+					<option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option>27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>
+					<option>31</option>
+		
+				</select>
+	
+				<select>
+					<option name="Choose a month" selected>Choose a month</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+
+				</select>
+	
+				<select>
+					<option name="Choose a year" selected>Choose a year</option>
+					<option>1995</option>
+					<option>1996</option>
+					<option>1997</option>
+					<option>1998</option>
+					<option>1999</option>
+					<option>2000</option>
+					<option>2001</option>
+					<option>2002</option>
+					<option>2003</option>
+					<option>2004</option>
+					<option>2005</option>
+
+				</select>
+				<br></br>
+	
+				<br/></br><label for="password"><b style="color:#d9d9d9;">Password</b><font color="red"></font></label><br/>
+				<input type="password" style="
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color:black;
+  color: white;"id="pwd" name="pwd" class="hi" pattern="[a-zA-Z0-9]{5,10}" placeholder="Enter Password" required></input></br/>
+				<br></br>
+				<label for="passwordR"><b style="color:#d9d9d9;">Re-enter Password</b><font color="red"></font></label><br/>
+				<input type="password" style="
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color:black;
+  color: white;" id="rpwd" name="rpwd" class="hi" pattern="[a-zA-Z0-9]{5,10}" placeholder="Re-Enter Password" required></input></br/><br/><br/><br/><br/>
+				
+				<fieldset style="border:solid black">
+					
+					<p style="float:left"><b style="color:#d9d9d9;">I'm not a robot</b><font color="red"></font><p>
+					<input type="checkbox" id="check0" onclick="enableButton()"></input>
+					<img src="../images/captcha.png" style="float:right;width:50px"></img>
+				</fieldset><br>
+	
+				<label><b style="color:#d9d9d9;">Accept privacy policy and terms</b><font color="red"></font></label>
+				<input type="checkbox" id="check" name="check" onclick="enableButton()"><br/> 
+				
+				<br>
+				<br>
+				<input type="submit" id="btn" name = "update" value="Sign Up" class="button button1"  disabled style="margin-left:200px"></input><br><br><a style="color:#d9d9d9;">
+				By clicking</a> <a href="login.html" style="color:red;">"Sign Up"</font>, <a style="color:red;">I agree to VIP's</a> <a href="termsConditions.html" style="color:red;">Terms of use</a> <a style="color:#d9d9d9;">and</a> <a href="termsConditions.html" style="color:red;"> Privacy Policy
+	
+			</form>
+		</article>	
+		</section>
+		<br><br>
+
+
+
+	<footer>
+	
+		<section>
+		
+			<nav class="nav2">
+				<h4>We are accepted</h4>
+				<a href="login.html" title="Pay via Visa" ><img src="../images/visa.png" style="width:50px" class="zoom"></a>
+				<a href="login.html" title="Pay via Master Card" ><img src="../images/master.png" style="width:50px" class="zoom"></a>
+				<a href="login.html" title="Pay via Discover" ><img src="../images/discover.png" style="width:50px" class="zoom"></a>
+				<p style="font-size:12px;color:red;">Copyright (c) VIP Online Grocery Delivery System</p>
+			</nav>
+			
+			<article class="article2">
+				<h4>Also available in</h4>
+				<a href="https://play.google.com" title="Google Play" ><img src="../images/google.png" style="width:80px" class="zoom"></a>
+				<a href="https://store.apple.com" title="App Store" ><img src="../images/app.png" style="width:80px" class="zoom"></a>
+			
+			</article>
+			
+			<article class="article2">
+				<div class="zoom"><a href="termsConditions.html" style="text-decoration:none;color:#00bbaa"><p>Terms and Conditions</p></a></div>
+				<div class="zoom"><a href="termsConditions.html" style="text-decoration:none;color:#00bbaa"><p>Privacy Policy</p></a></div>
+				<div class="zoom"><a href="suggestions.html" style="text-decoration:none;color:#00bbaa"><p>Feedback and Suggestions</p></a></div>
+			</article>
+			
+			<aside class="aside3">
+			<br><h4>Follow us on</h4>
+			<a href="https://www.facebook.com" title="Facebook" ><img src="../images/fb.png" style="width:30px" class="zoom"></a>
+			<a href="https://www.intagram.com" title="Instagram" ><img src="../images/insta.png" style="width:30px" class="zoom"></a>
+			<a href="https://www.twitter.com" title="Twitter" ><img src="../images/twitter.png" style="width:30px" class="zoom"></a>
+			
+			</aside>
+		</section>
+			
+	
+	
+	</footer>
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html> 

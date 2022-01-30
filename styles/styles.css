@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+/*
+IT20276164
+Bandara E.G.M.D
+Group 2
+Kurunegala Center
+*/
+
+/*body{
+	background: rgb(34,193,195);
+	background: linear-gradient(0deg, rgba(34,193,195,0.6250700109145221) 7%, rgba(253,187,45,1) 100%);
+}*/
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width : 200px;
+  height: 200px;
+ 
+}
+
+
+h2{
+	font-size:40px;
+	font-family: Lucida Console, Courier, monospace;
+	display: block;
+}
+
+#head3
+{
+	font-weight:bold;
+	font-size:30px;
+	font-family:Sofia;
+}
+
+.ul_menu
+{
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+	/*background-color:#333;*/
+	background: linear-gradient(to right, #000000 50%, #ffffcc 100%);
+	overflow: hidden;
+}
+
+.li_menu{
+	float:left;
+}
+
+.active{
+	float:left;
+	background-color:gray;
+}
+
+.A {
+  display: block;
+  color:white;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align:center;
+  text-decoration:none;
+}
+
+.A:hover {
+  background-color: teal;
+}
+
+/*list 2*/
+
+.ul_menu1
+{
+	margin: 10px;
+	padding:0;
+	width:50%;
+	list-style-type:square;
+	/*background-color:#333;*/
+
+}
+
+
+
+.active1{
+	color:gray;
+	text-decoration:none;
+}
+
+.active1:hover{
+	color:green;
+}
+
+
+
+button{
+	background-color:#666;
+	padding:5px;
+	border:none;
+	color:white;
+}
+button:hover{
+	background-color:orange;
+}
+button:active{
+	background-color:yellow;
+}
+
+form{
+	background-color:#dbd9d9;
+	padding:10px;
+	margin-top:50px;
+	margin-left:50px;
+	margin-right:50px;
+	border:solid blue;
+}
+.in{
+	padding: 14px 16px;
+	background-color: black;
+	color:white;
+	float:right;
+}
+table{
+	background-color:white;
+	border-top:2px solid blue;
+	border-bottom:2px solid blue;
+	border-left:2px solid blue;
+	border-right:2px solid blue;
+	width:100%;
+}
+
+
+
+	

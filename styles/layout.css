@@ -1,0 +1,114 @@
+@charset "utf-8";
+/*page layout*/
+/*
+IT19003160
+Kumarasiri R.D.S.R 
+Group 2
+Kurunegala Center
+*/
+.nav1 {
+    float: left;
+	margin:10px 30px 10px 30px;
+    width: 15%;
+    height: 600px; /* only for demonstration, should be removed */
+    background: #ccf;
+    padding: 20px;
+	background-image:url("../images/sidenav.jpg");
+}
+
+.aside1 {
+    float: right;
+	margin:10px 30px 10px 30px;
+    width: 15%;
+    height: 500px; /* only for demonstration, should be removed */
+    background: #ccf;
+    padding: 20px;
+}
+
+.article1{
+	
+	
+	float:left;
+	margin:10px 30px 10px 30px;
+	width:50%;
+
+	
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer{
+	background-image:url("../images/footer.jpg");
+	margin:10px 30px 5px 30px;
+	padding:0px;
+
+}
+
+.nav2 {
+    float: left;
+	margin:10px 30px 10px 30px;
+    width: 20%;
+    padding: 10px;
+}
+
+.aside2 {
+    float: right;
+	margin:10px 30px 10px 30px;
+    width: 20%;
+    background: gray;
+    padding: 10px;
+}
+
+.article2{
+	
+	
+	float:left;
+	width:20%;
+	padding: 10px;
+	margin:10px 30px 10px 30px;
+	
+}
+.article3{
+	
+	
+	float:left;
+	background:white;
+	width:20%;
+	padding: 10px;
+	background:gray;
+	margin:10px 30px 10px 30px;
+	
+}
+
+
+.aside4{
+	
+	
+	float:right;
+	width:30%;
+	padding-left: 30px;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin:10px 30px 10px 30px;
+	
+}
+.article6{
+	
+	
+	float:left;
+	width:30%;
+	padding: 10px;
+	margin:10px 30px 10px 30px;
+	
+}
+
+h4{
+	color:white;
+}
+h4:hover{
+	color:gray;
+}
